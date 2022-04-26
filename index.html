@@ -20,32 +20,32 @@
             <h2>Cadastro</h2>
 
             <label for="nome">Nome</label>
-            <input type="text" name="nome" placeholder="Nome" class="field" />
+            <input type="text" name="nome" placeholder="Nome" class="field" id="nome" />
 
             <label for="sobrenome">Sobrenome</label>
-            <input type="text" name="sobrenome" placeholder="Sobrenome" class="field" />
+            <input type="text" name="sobrenome" placeholder="Sobrenome" class="field" id="sobrenome"/>
 
             <label for="data-nascimento">Data de nascimento</label>
-            <input type="date" name="dataNascimento" class="field" />
+            <input type="date" name="dataNascimento" class="field" id='data'/>
 
             <label for="email">Email</label>
-            <input type="email" name="email" placeholder="Email" class="field" />
+            <input type="email" name="email" placeholder="Email" class="field" id="email"/>
 
             <label for="contato">Contato</label>
-            <input type="text" name="contato" placeholder="Contato" class="field" />
+            <input type="text" name="contato" placeholder="Contato" class="field" id="contato"/>
 
             <label for="telefone">Telefone</label>
-            <input type="tel" name="telefone" placeholder="Telefone" class="field" />
+            <input type="tel" name="telefone" placeholder="Telefone" class="field" id="telefone"/>
 
             <label for="cargo">Cargo</label>
-            <select name="cargo" class="field">
+            <select name="cargo" class="field" id="cargo">
           <option value="Aluno">Aluno</option>
           <option value="Facilitador">Facilitador</option>
           <option value="Instrutor">Instrutor</option>
         </select>
 
             <button id="register-button">Cadastrar</button>
-        </form>
+        </form id='teste'>
     </main>
     <aside>
         <h3>Total de cadastrados: <span id="total-alunos"></span></h3>
@@ -58,9 +58,16 @@
         </select>
             <button id="btn">Pesquisar</button>
         </div>
-        <ul id="lista-de-alunos"></ul>
+        <ul id="lista-de-alunos">
+            
+        </ul>
     </aside>
-    <script src="assets/js/script.js"></script>
+    
+    <script type="module" src="/assets/js/data.js"></script>
+    <script type="module" src="/assets/js/pessoa.js"></script>
+    <script type="module" src="/assets/js/script.js"></script>
+    
+   
 </body>
 
 </html>

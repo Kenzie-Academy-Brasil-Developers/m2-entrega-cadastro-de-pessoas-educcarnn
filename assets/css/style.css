@@ -145,8 +145,8 @@ aside>ul::-webkit-scrollbar-thumb:hover {
     background: #024181;
     cursor: pointer;
 }
-
-aside>ul>li {
+/* Para estilizar form*/ 
+#information {
     display: flex;
     color: #fff;
     justify-content: space-between;
